@@ -1,0 +1,59 @@
+2018-10-27 21:35:35.439 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:44301/api/values  
+2018-10-27 21:35:35.439 +03:00 [Information] Request starting HTTP/1.1 DEBUG http://localhost:63327/  0
+2018-10-27 21:35:35.559 +03:00 [Information] Request finished in 122.7319ms 200 
+2018-10-27 21:35:35.718 +03:00 [Information] Route matched with "{action = \"Get\", controller = \"Values\"}". Executing action "AdventureWorks.Controllers.ValuesController.Get (AdventureWorks)"
+2018-10-27 21:35:35.729 +03:00 [Information] Executing action method "AdventureWorks.Controllers.ValuesController.Get (AdventureWorks)" - Validation state: Valid
+2018-10-27 21:35:35.740 +03:00 [Information] _logger: LogInformation
+2018-10-27 21:35:35.744 +03:00 [Warning] _logger: LogWarning
+2018-10-27 21:35:35.746 +03:00 [Error] _logger: LogError
+2018-10-27 21:35:35.762 +03:00 [Fatal] _logger: LogCritical
+2018-10-27 21:35:35.769 +03:00 [Information] Executed action method "AdventureWorks.Controllers.ValuesController.Get (AdventureWorks)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 27.3594ms.
+2018-10-27 21:35:35.785 +03:00 [Information] Executing ObjectResult, writing value of type '"System.String[]"'.
+2018-10-27 21:35:35.801 +03:00 [Information] Executed action "AdventureWorks.Controllers.ValuesController.Get (AdventureWorks)" in 73.5375ms
+2018-10-27 21:35:35.826 +03:00 [Information] Request finished in 373.2295ms 200 application/json; charset=utf-8
+2018-10-27 21:35:59.938 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:44301/api/values  
+2018-10-27 21:36:00.077 +03:00 [Information] Route matched with "{action = \"Get\", controller = \"Values\"}". Executing action "AdventureWorks.Controllers.ValuesController.Get (AdventureWorks)"
+2018-10-27 21:36:00.086 +03:00 [Information] Executing action method "AdventureWorks.Controllers.ValuesController.Get (AdventureWorks)" - Validation state: Valid
+2018-10-27 21:36:00.089 +03:00 [Information] _logger: LogInformation
+2018-10-27 21:36:00.089 +03:00 [Warning] _logger: LogWarning
+2018-10-27 21:36:00.089 +03:00 [Error] _logger: LogError
+2018-10-27 21:36:00.089 +03:00 [Fatal] _logger: LogCritical
+2018-10-27 21:36:00.092 +03:00 [Information] Executed action method "AdventureWorks.Controllers.ValuesController.Get (AdventureWorks)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 0.7187ms.
+2018-10-27 21:36:00.098 +03:00 [Information] Executing ObjectResult, writing value of type '"System.String[]"'.
+2018-10-27 21:36:00.108 +03:00 [Information] Executed action "AdventureWorks.Controllers.ValuesController.Get (AdventureWorks)" in 28.3017ms
+2018-10-27 21:36:00.111 +03:00 [Information] Request finished in 177.4013ms 200 application/json; charset=utf-8
+2018-10-27 21:42:17.936 +03:00 [Information] Request starting HTTP/1.1 DEBUG http://localhost:63327/  0
+2018-10-27 21:42:17.936 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:44301/api/values  
+2018-10-27 21:42:18.005 +03:00 [Information] Request finished in 71.913ms 200 
+2018-10-27 21:42:18.151 +03:00 [Information] Route matched with "{action = \"Get\", controller = \"Values\"}". Executing action "AdventureWorks.Controllers.ValuesController.Get (AdventureWorks)"
+2018-10-27 21:42:18.162 +03:00 [Information] Executing action method "AdventureWorks.Controllers.ValuesController.Get (AdventureWorks)" - Validation state: Valid
+2018-10-27 21:42:18.169 +03:00 [Information] Executed action method "AdventureWorks.Controllers.ValuesController.Get (AdventureWorks)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 0.32ms.
+2018-10-27 21:42:18.178 +03:00 [Information] Executing ObjectResult, writing value of type '"System.String[]"'.
+2018-10-27 21:42:18.191 +03:00 [Information] Executed action "AdventureWorks.Controllers.ValuesController.Get (AdventureWorks)" in 32.1612ms
+2018-10-27 21:42:18.200 +03:00 [Information] Request finished in 267.2472ms 200 application/json; charset=utf-8
+2018-10-27 21:42:21.935 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:44301/api/Products  
+2018-10-27 21:42:21.940 +03:00 [Information] Route matched with "{action = \"GetProduct\", controller = \"Products\"}". Executing action "AdventureWorks.Controllers.ProductsController.GetProduct (AdventureWorks)"
+2018-10-27 21:42:22.132 +03:00 [Information] Executing action method "AdventureWorks.Controllers.ProductsController.GetProduct (AdventureWorks)" - Validation state: Valid
+2018-10-27 21:42:22.134 +03:00 [Information] Executed action method "AdventureWorks.Controllers.ProductsController.GetProduct (AdventureWorks)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 0.2812ms.
+2018-10-27 21:42:22.139 +03:00 [Information] Executing ObjectResult, writing value of type '"Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1[[AdventureWorks.Models.Product, AdventureWorks, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2018-10-27 21:42:23.269 +03:00 [Warning] The property '"SystemInformationId"' on entity type '"AwbuildVersion"' is of type 'byte', but is set up to use a SQL Server identity column. This requires that values starting at 255 and counting down will be used for temporary key values. A temporary key value is needed for every entity inserted in a single call to 'SaveChanges'. Care must be taken that these values do not collide with real key values.
+2018-10-27 21:42:23.271 +03:00 [Warning] The property '"ShiftId"' on entity type '"Shift"' is of type 'byte', but is set up to use a SQL Server identity column. This requires that values starting at 255 and counting down will be used for temporary key values. A temporary key value is needed for every entity inserted in a single call to 'SaveChanges'. Care must be taken that these values do not collide with real key values.
+2018-10-27 21:42:23.359 +03:00 [Information] Entity Framework Core "2.1.4-rtm-31024" initialized '"AdventureWorksDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-10-27 21:42:24.229 +03:00 [Information] Executed DbCommand ("64"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ProductID], [p].[Class], [p].[Color], [p].[DaysToManufacture], [p].[DiscontinuedDate], [p].[FinishedGoodsFlag], [p].[ListPrice], [p].[MakeFlag], [p].[ModifiedDate], [p].[Name], [p].[ProductLine], [p].[ProductModelID], [p].[ProductNumber], [p].[ProductSubcategoryID], [p].[ReorderPoint], [p].[rowguid], [p].[SafetyStockLevel], [p].[SellEndDate], [p].[SellStartDate], [p].[Size], [p].[SizeUnitMeasureCode], [p].[StandardCost], [p].[Style], [p].[Weight], [p].[WeightUnitMeasureCode]
+FROM [Production].[Product] AS [p]"
+2018-10-27 21:42:24.450 +03:00 [Information] Executed action "AdventureWorks.Controllers.ProductsController.GetProduct (AdventureWorks)" in 2507.5418ms
+2018-10-27 21:42:24.463 +03:00 [Information] Request finished in 2525.9805ms 200 application/json; charset=utf-8
+2018-10-27 21:42:29.242 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:44301/api/Products/5  
+2018-10-27 21:42:29.258 +03:00 [Information] Route matched with "{action = \"GetProduct\", controller = \"Products\"}". Executing action "AdventureWorks.Controllers.ProductsController.GetProduct (AdventureWorks)"
+2018-10-27 21:42:29.281 +03:00 [Information] Executing action method "AdventureWorks.Controllers.ProductsController.GetProduct (AdventureWorks)" with arguments (["5"]) - Validation state: Valid
+2018-10-27 21:42:29.291 +03:00 [Information] Entity Framework Core "2.1.4-rtm-31024" initialized '"AdventureWorksDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-10-27 21:42:29.505 +03:00 [Information] Executed DbCommand ("71"ms) [Parameters=["@__get_Item_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [e].[ProductID], [e].[Class], [e].[Color], [e].[DaysToManufacture], [e].[DiscontinuedDate], [e].[FinishedGoodsFlag], [e].[ListPrice], [e].[MakeFlag], [e].[ModifiedDate], [e].[Name], [e].[ProductLine], [e].[ProductModelID], [e].[ProductNumber], [e].[ProductSubcategoryID], [e].[ReorderPoint], [e].[rowguid], [e].[SafetyStockLevel], [e].[SellEndDate], [e].[SellStartDate], [e].[Size], [e].[SizeUnitMeasureCode], [e].[StandardCost], [e].[Style], [e].[Weight], [e].[WeightUnitMeasureCode]
+FROM [Production].[Product] AS [e]
+WHERE [e].[ProductID] = @__get_Item_0"
+2018-10-27 21:42:29.522 +03:00 [Information] Product Not Found
+2018-10-27 21:42:29.526 +03:00 [Information] Executed action method "AdventureWorks.Controllers.ProductsController.GetProduct (AdventureWorks)", returned result "Microsoft.AspNetCore.Mvc.NotFoundResult" in 239.0023ms.
+2018-10-27 21:42:29.533 +03:00 [Information] Executing HttpStatusCodeResult, setting HTTP status code 404
+2018-10-27 21:42:29.536 +03:00 [Information] Executed action "AdventureWorks.Controllers.ProductsController.GetProduct (AdventureWorks)" in 276.3457ms
+2018-10-27 21:42:29.544 +03:00 [Information] Request finished in 301.61ms 404 
