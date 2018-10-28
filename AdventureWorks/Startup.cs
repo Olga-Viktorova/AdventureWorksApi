@@ -26,7 +26,7 @@ namespace AdventureWorksApi
     {
       services.AddMvc();
 
-      var connection = @"Server=mysqlvmlabel.westeurope.cloudapp.azure.com,1433;Database=AdventureWorks2012;Trusted_Connection=True;ConnectRetryCount=0";
+      var connection = @"Server=mysqlvmlabel.westeurope.cloudapp.azure.com,1433;Database=AdventureWorks2012;user id=volha_viktarava;password=123456qwerty!@;Trusted_Connection=True;ConnectRetryCount=0";
       services.AddDbContext<AdventureWorksDbContext>(options => options.UseSqlServer(connection));
 
       services.AddSwaggerGen(c => c.SwaggerDoc("v1", new Info {Title = "My API", Version = "v1"}));
