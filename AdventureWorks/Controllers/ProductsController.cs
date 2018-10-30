@@ -10,7 +10,7 @@ namespace AdventureWorksApi.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class ProductsController : ControllerBase
+    public class ProductsController : ControllerBase //comment 
     {
         private readonly AdventureWorksDbContext _context;
         private readonly ILogger _logger;
