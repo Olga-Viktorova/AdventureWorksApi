@@ -1,0 +1,23 @@
+﻿@using (Html.BeginForm())
+{
+<p>
+  Find by name: @Html.TextBox("SearchString")
+  <input type="submit" value="Search" />
+</p>
+}
+<table class="table">
+  <tr>
+    <th>
+      <h2>Result</h2>
+    </th>
+  </tr>
+
+  @foreach (var item in Model) {
+  <tr>
+    <th>
+      @item.Content
+    </th>
+  </tr>
+  }
+</table>
+    
