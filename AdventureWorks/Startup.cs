@@ -48,6 +48,11 @@ namespace AdventureWorksApi
       services.AddScoped<FileStore, FileStore>();
       services.AddScoped<SearchSQLProductService, SearchSQLProductService>();
       services.AddScoped<SearchBlobService, SearchBlobService>();
+      services.AddScoped<ConnectionStringService, ConnectionStringService>();
+
+      var csService = ConnectionStringService.GetInstanceAsync().Result;
+
+      services.AddSingleton<ConnectionStringService>(csService);
 
       //var connection = @"Server=mysqlvmlabel.westeurope.cloudapp.azure.com,1433;Database=AdventureWorks2012;user id=volha_viktarava;password=123456qwerty!@;Trusted_Connection=True;ConnectRetryCount=0";
       //var connection = @"data source=mysqlvmlabel.westeurope.cloudapp.azure.com,1433;initial catalog=AdventureWorks2012;integrated security=false;user id=volha_viktarava;password=123456qwerty!@;MultipleActiveResultSets=True;";
@@ -55,14 +60,16 @@ namespace AdventureWorksApi
       //  @"data source=localhost;initial catalog = AdventureWorks2012; persist security info = True;Integrated Security = SSPI;"; 
 
       // personal subscription
-      var connection =
-        @"Server= adventureworks2server.database.windows.net,1433;Initial Catalog=AdventureWorks2;Persist Security Info=False;User ID=volha_viktarava;Password=123456qwerty!@;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
+      //var connection =
+      //  @"Server= adventureworks2server.database.windows.net,1433;Initial Catalog=AdventureWorks2;Persist Security Info=False;User ID=volha_viktarava;Password=123456qwerty!@;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
 
       //// epam subscription
       //var connection =
       //  @"Server=tcp:adventureworksserver12.database.windows.net,1433;Initial Catalog=AdventureWorks;Persist Security Info=False;User ID=volha_viktarava;Password=123456qwerty!@;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
 
-      services.AddDbContext<AdventureWorksDbContext>(options => options.UseSqlServer(connection));
+      //var conn =
+      //  @"Server=tcp:adventure-worksserver.database.windows.net,1433;Initial Catalog=AdventureWorks;Persist Security Info=False;User ID=volha-viktarava;Password=123456qwerty!@;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
+      services.AddDbContext<AdventureWorksDbContext>(options => options.UseSqlServer(csService.Message));
 
       services.AddSwaggerGen(c => c.SwaggerDoc("v1", new Info {Title = "My API", Version = "v1"}));
     }
